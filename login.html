@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArchTracker | Login</title>
+  <link rel="stylesheet" href="./time-tracking-dashboard-main/design/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>ArchTracker</h1>
+    <p class="subtitle">Track your projects efficiently</p>
+
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+      <p class="hint">Don’t have an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      window.location.href = "time-tracking-dashboard-main/index.html";
+    });
+  </script>
+</body>
+</html>
